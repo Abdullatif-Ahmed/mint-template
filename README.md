@@ -1,0 +1,2 @@
+# mint-template
+my project
