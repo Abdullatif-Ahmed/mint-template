@@ -10,7 +10,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0" >
         <title>mint</title>
-        <script src="html5shiv.min.js"></script>
     </head>
         
     <body>
@@ -23,23 +22,8 @@
                      </a>
                     </figure>
 
-                 <div class=" social">
-                        <ul>
-                            <li>
-                                <a href="#"> <i class="fab fa-facebook-f toggle"></i></a> 
-            
-                            </li>
-                            <li>
-                                <a href="#"> <i class="fab fa-instagram-square toggle"></i></a> 
-            
-                            </li> 
-                            <li>
-                                <a href="#"><i class="fab fa-twitter toggle"></i></a> 
-            
-                            </li>
-                        </ul>
-                </div>
 
+                
 
 
 
@@ -80,7 +64,7 @@
                      </div>
                     
                      <figure class="header-img col-lg-1">
-                         <img src="img/banner_1.jpg" alt="">
+                         <img src="img/illustration19.png" alt="">
      
                      </figure>
                 </div>
@@ -133,7 +117,9 @@
          </div>  
         </section>
             
-
+        <span class="up">
+            <i class="fas fa-chevron-up"></i>
+        </span>
 
         <section class="about" id="about">
             <div class="container">
@@ -220,14 +206,42 @@
                        <span> &copy; 2020 - Mint,All Right Reserved</span>
 
                     </div>
-                   
+                    <div class=" social">
+                        <ul>
+                            <li>
+                                <a href="#"> <i class="fab fa-facebook-f toggle"></i></a> 
             
-                   <a class="back_to_top" href="#nav">BACK TO TOP <i class="fas fa-angle-up"></i> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fab fa-instagram-square toggle"></i></a> 
+            
+                            </li> 
+                            <li>
+                                <a href="#"><i class="fab fa-twitter toggle"></i></a> 
+            
+                            </li>
+                        </ul>
+                </div>
 
             </div>
                 
        
             </section>
         </footer>
+        <script >let button_up = document.querySelector(".up");
+            window.onscroll = function(){
+                if(this.scrollY>=1000){
+                    button_up.classList.add("show");
+                }else{
+                    button_up.classList.remove("show")
+                }
+            }
+            button_up.onclick = function(){
+                window.scrollTo({
+                    top : 0,
+                    behavior: "smooth"
+                })
+            }</script>
+        <script src="html5shiv.min.js"></script>
     </body>
 </html>
