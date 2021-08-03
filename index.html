@@ -70,10 +70,10 @@
             
                         </span>  
                         <ul class="dis-flex">
-                            <li ><a class="active" href="#">ALL</a></li>
-                            <li><a href="#">BRANDING</a></li>
-                            <li><a href="#">ILLUSTRATION</a></li>
-                            <li><a href="#">WEB</a></li>
+                            <li data-filter="all">ALL</li>
+                            <li data-filter=".BRANDING">BRANDING</li>
+                            <li data-filter=".ILLUSTRATION">ILLUSTRATION</li>
+                            <li data-filter=".WEB">WEB</li>
                             
                         </ul>
                     </div>
@@ -82,19 +82,81 @@
 
             </div>
             <div class="showcase container dis-grid">
-                <div class="fig"><figure><img src="img/p1-full.jpg">  </figure> <div><h2>ART WORK</h2> <span>BRANDING</span></div> </div>
-                <div class="fig"><figure><img src="img/p2-full.jpg">  </figure> <div><h2>ART WORK</h2> <span>BRANDING</span></div> </div>
-                <div class="fig"><figure><img src="img/p3-full.jpg">  </figure> <div><h2>ART WORK</h2> <span>BRANDING</span></div> </div>
-                <div class="fig"><figure><img src="img/portfolio_1.jpg">  </figure> <div><h2>ART WORK</h2> <span>BRANDING</span></div> </div>
-                <div class="fig"><figure><img src="img/portfolio_2.jpg">  </figure> <div><h2>ART WORK</h2> <span>BRANDING</span></div> </div>
-                <div class="fig"><figure><img src="img/portfolio_3.jpg">  </figure> <div><h2>ART WORK</h2> <span>BRANDING</span></div> </div>
-                <div class="fig"><figure><img src="img/6.jpg">  </figure> <div><h2>ART WORK</h2> <span>BRANDING</span></div> </div>
-                <div class="fig"><figure><img src="img/portfolio_2col_3.jpg">  </figure> <div><h2>ART WORK</h2> <span>BRANDING</span></div> </div>
+                <div class="fig BRANDING mix" data-order="1">
+                    <figure>
+                        <img src="img/p1-full.jpg">
+                    </figure>
+                    <div>
+                        <h2>ART WORK</h2>
+                        <span>BRANDING</span>
+                    </div>
+                </div>
+                <div class="fig BRANDING mix" data-order="2">
+                    <figure>
+                        <img src="img/p2-full.jpg">  
+                    </figure> 
+                    <div>
+                        <h2>ART WORK</h2> 
+                        <span>BRANDING</span>
+                    </div> 
+                </div>
+                <div class="fig WEB mix" data-order="3">
+                    <figure>
+                        <img src="img/p3-full.jpg">  
+                    </figure> 
+                    <div>
+                        <h2>ART WORK</h2> 
+                        <span>WEB</span>
+                    </div> 
+                </div>
+                <div class="fig ILLUSTRATION mix" data-order="4">
+                    <figure>
+                        <img src="img/portfolio_1.jpg">  
+                    </figure> 
+                    <div>
+                        <h2>ART WORK</h2> 
+                        <span>ILLUSTRATION</span>
+                    </div> 
+                </div>
+                <div class="fig WEB mix" data-order="5">
+                    <figure>
+                        <img src="img/portfolio_2.jpg">  
+                    </figure> 
+                    <div>
+                        <h2>ART WORK</h2> 
+                        <span>WEB</span>
+                    </div> 
+                </div>
+                <div class="fig BRANDING mix" data-order="6">
+                    <figure>
+                        <img src="img/portfolio_3.jpg">  
+                    </figure> 
+                    <div>
+                        <h2>ART WORK</h2> 
+                        <span>BRANDING</span>
+                    </div> 
+                </div>
+                <div class="fig WEB mix" data-order="7">
+                    <figure>
+                        <img src="img/6.jpg">  
+                    </figure> 
+                    <div>
+                        <h2>ART WORK</h2> 
+                        <span>WEB</span>
+                    </div> 
+                </div>
+                <div class="fig ILLUSTRATION mix" data-order="8">
+                    <figure>
+                        <img src="img/portfolio_2col_3.jpg">  
+                    </figure> 
+                    <div>
+                        <h2>ART WORK</h2> 
+                        <span>ILLUSTRATION</span>
+                    </div> 
+                </div>
             
             </div>
-            <div class="container" > 
-                <button class="show-me-more btn-style2"> SHOW ME MORE</button>
-            </div>  
+           
         </section>
             
         <span class="up">
@@ -179,7 +241,7 @@
                 <div class="foot-content dis-flex justify"> 
                     <div class="logo">
                         <img src="img/logo.png" alt="">
-                        <span> &copy; 2020 - Mint,All Right Reserved</span>
+                        <span> &copy; 2021 - Mint,All Right Reserved</span>
                     </div>
                     <div class=" social">
                         <ul>
@@ -200,20 +262,8 @@
                 </div>
             </section>
         </footer>
-        <script >let button_up = document.querySelector(".up");
-            window.onscroll = function(){
-                if(this.scrollY>=1000){
-                    button_up.classList.add("show");
-                }else{
-                    button_up.classList.remove("show")
-                }
-            }
-            button_up.onclick = function(){
-                window.scrollTo({
-                    top : 0,
-                    behavior: "smooth"
-                })
-            }</script>
-        <script src="html5shiv.min.js"></script>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/mixitup.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
